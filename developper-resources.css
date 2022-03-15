@@ -13,40 +13,7 @@ body {
 
 .nav {
     background-color: rgb(255, 117, 74);
-    height: 100px;
-}
-
-.devresource1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius:  20px 20px 0px 0px;
-    /*border-radius: 20px;*/
-    /*box-shadow: 0px 20px 6px rgb(20, 241, 149);*/
-    padding-top: 6px;
-    /*padding-left: 4px;*/
-}
-
-.devresource1-1, .devresource1-2 {
-    /*width: 40%;*/
-    /*border-radius:  20px 20px 0px 0px;*/
-}
-
-.devresource1-3 {
-    height: 30px;
-    width: 100%;
-    /*border-radius: 20px;*/
-    /*padding-left: 4px;*/
-    background: linear-gradient(180deg,#14f195 -5.71%,transparent);
-    clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
-    padding-bottom: 10px;
-}
-
-.devresource1-1 {
-    font-size: xx-large;
-}
-.devresource1-2 {
-    font-size: x-large;
+    height: 50px;
 }
 
 .devresource1 div {
@@ -54,6 +21,39 @@ body {
     background-color: rgb(20, 241, 149);
     height: 170px;
     width: 100%;
+}
+
+.devresource1 {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 2%;
+    min-width: 22rem;
+}
+
+.devresource1-3 {
+    height: 40px;
+    width: 80%;
+    margin-left: 2%;
+    min-width: 22rem;
+    background: linear-gradient(180deg,#14f195 -5.71%,transparent);
+    clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
+    padding-bottom: 10px;
+}
+
+.devresource1-1 {
+    border-radius:  12px 0px 0px 0px;
+}
+
+.devresource1-2 {
+    border-radius:  0px 12px 0px 0px;
+}
+
+.devresource1-1 {
+    font-size: xx-large;
+}
+.devresource1-2 {
+    font-size: x-large;
 }
 
 .bloc-container {
@@ -101,7 +101,6 @@ body {
 .bloc1 {
     background-color: rgb(255, 117, 74);
 }  
-
 .bloc2 {
     background-color: rgb(235, 84, 188);
 } 
@@ -128,7 +127,6 @@ footer {
     body {
         max-width: 390px;
         max-height: 844px;
-
     }
 }
 
