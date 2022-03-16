@@ -123,33 +123,25 @@ main {
 } 
 
 .toolsContainer {
+    background-color: rgb(128, 236, 255);
     display: flex;
     flex-direction: column;
     margin-left: 3%;
     margin-bottom: 3%;
-    gap: 20px;
-    /*
-        gap: 6%;
-    width: 80%;
-    margin-left: 3%;
-    min-width: 22rem;
-    margin-top: 3%;  
-    border-radius: 6px; */
+    width: 94%;
+    gap: 10px;
 }
 
 .toolBloc {
     background-color: rgb(128, 236, 255);
-    gap: 6%;
-    height: 100px;
-    width: 100px;
-    min-height: 200px;
-    min-width: 300px;
+    height: 200px;
+}
 
-    /*
-    background-color: rgb(128, 236, 255);
-    height: 20rem;
-    min-height: 400px;
-    min-width: 300px;*/
+.ToolBloc1,.ToolBloc3 {
+    background-color:black;
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 94%;
 }
 
 footer {
