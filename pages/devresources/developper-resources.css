@@ -144,6 +144,10 @@ main {
     width: 94%;
 }
 
+.ToolBloc3 {
+    background-image: url("/assets/images/chart-1905225_960_720.webp");
+}
+
 footer {
     background-color: rgb(255, 117, 74);
     height: 50px;
