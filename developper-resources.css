@@ -5,9 +5,14 @@
 }
 
 body {
+    width: 390px;
     max-width: 390px;
     max-height: 844px;
-    min-height: 840px; /* marche pas */
+    min-height: 844px; /* marche pas */
+    background-color: white;
+}
+
+main {
     background-color: #000;
 }
 
@@ -16,14 +21,14 @@ body {
     height: 50px;
 }
 
-.devresource1 div {
+.beginnersBlog div {
     margin-top: 4%;
     background-color: rgb(20, 241, 149);
     height: 170px;
     width: 100%;
 }
 
-.devresource1 {
+.beginnersBlog {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -56,7 +61,7 @@ body {
     font-size: x-large;
 }
 
-.bloc-container {
+.dev-res-container {
     margin: 3%;
     display: flex;
     flex-direction: row;
@@ -117,10 +122,39 @@ body {
     background-color: rgb(235, 84, 188);
 } 
 
+.toolsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    gap: 20px;
+    /*
+        gap: 6%;
+    width: 80%;
+    margin-left: 3%;
+    min-width: 22rem;
+    margin-top: 3%;  
+    border-radius: 6px; */
+}
+
+.toolBloc {
+    background-color: rgb(128, 236, 255);
+    gap: 6%;
+    height: 100px;
+    width: 100px;
+    min-height: 200px;
+    min-width: 300px;
+
+    /*
+    background-color: rgb(128, 236, 255);
+    height: 20rem;
+    min-height: 400px;
+    min-width: 300px;*/
+}
+
 footer {
     background-color: rgb(255, 117, 74);
     height: 50px;
-    display: block;
 }
 
 @media screen and (max-width: 390px) { 
