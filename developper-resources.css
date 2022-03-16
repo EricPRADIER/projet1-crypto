@@ -27,14 +27,14 @@ body {
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin-left: 2%;
+    margin-left: 3%;
     min-width: 22rem;
 }
 
 .devresource1-3 {
     height: 40px;
     width: 80%;
-    margin-left: 2%;
+    margin-left: 3%;
     min-width: 22rem;
     background: linear-gradient(180deg,#14f195 -5.71%,transparent);
     clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
