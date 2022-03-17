@@ -6,6 +6,7 @@
   <title>WildCoin - The Best Coin in Paris 20e</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src="https://kit.fontawesome.com/51a211e817.js" crossorigin="anonymous"></script>
   <script src='main.js'></script>
 </head>
 <body>
@@ -21,11 +22,14 @@
   <main>
     <div class="search-container">
       <button id="search-button">Browse by category...
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Search">
+      </button>
+      <div class="search-input">
+        <input class="search-input-bar" type="search" placeholder="Search projects...">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Search">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-      </button>
+      </div>
     </div>
     <div class="background-img">
       <img src="https://avatars.githubusercontent.com/u/8874047?s=280&v=4" alt="background image">
@@ -39,159 +43,346 @@
       </h2>
       <ul class="trending-apps-list">
         <li>
-          <img alt="first-app-picture" src="https://picsum.photos/80">
+          <img alt="first-app-picture" src="https://picsum.photos/100">
           <div class="trending-app-name">
             First app
           </div>
         </li>
         <li>
-          <img alt="second-app-picture" src="https://picsum.photos/80">
+          <img alt="second-app-picture" src="https://picsum.photos/100">
           <div class="trending-app-name">
             Second app
           </div>
         </li>
         <li>
-          <img alt="third-app-picture" src="https://picsum.photos/80">
+          <img alt="third-app-picture" src="https://picsum.photos/100">
           <div class="trending-app-name">
             Third app
           </div>
         </li>
         <li>
-          <img alt="fourth-app-picture" src="https://picsum.photos/80">
+          <img alt="fourth-app-picture" src="https://picsum.photos/100">
           <div class="trending-app-name">
             Fourth app
           </div>
         </li>
       </ul>
     </section>
-    <section class="top-apps-section">
-      <h2>
-        Top Wild Projects
-      </h2>
-      <ul class="top-apps-list">
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-        <li>
-          <img alt="logo" src="https://picsum.photos/70">
-          <div class="top-app-name">
-            Name
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="list-apps-section">
-      <div class="list-header">
-        <div class="categories-btn">
-          <button>
-            Popular
-          </button>
-          <button>
-            Newest
-          </button>
-        </div>
-        <button id="show-more-btn">Show more</button>
+    <div class="top-lists-apps-global-container">
+      <div class="top-apps-global-container">
+        <section class="top-apps-section">
+          <h2>
+            Top Wild Projects
+          </h2>
+          <ul class="top-apps-list">
+            <li>
+              <svg width="70" height="70" viewBox="0 0 131 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M65.4817 130C61.7748 130 58.7073 128.004 58.7073 125.552C58.7073 123.101 61.7378 121.095 65.4817 121.095C69.2256 121.095 72.2555 123.092 72.2555 125.552C72.2555 128.013 69.2256 130 65.4817 130ZM85.1463 125.552C85.1463 123.965 83.1912 122.683 80.7724 122.683C78.3537 122.683 76.4072 123.965 76.4072 125.552C76.4072 127.14 78.363 128.412 80.7724 128.412C83.1819 128.412 85.1463 127.131 85.1463 125.552ZM45.8257 125.552C45.8257 127.131 47.7722 128.412 50.1909 128.412C52.6096 128.412 54.5557 127.131 54.5557 125.552C54.5557 123.974 52.6004 122.683 50.1909 122.683C47.7815 122.683 45.7981 123.965 45.7981 125.552H45.8257ZM37.5409 114.15C30.9335 110.575 26.3001 105.022 24.0945 96.2663H21.1755C9.25795 96.2663 9.29502 67.3425 21.1755 67.3425H24.4837C26.1136 60.4853 29.6177 54.2186 34.6033 49.2453L35.7712 29.8111C36.2068 22.5685 42.3969 22.5685 42.8324 29.8111L43.6202 42.9498C49.8107 39.9228 57.1686 38.3907 65.4998 38.3907C86.5176 38.3907 101.503 48.0104 106.516 67.3425H109.806C121.723 67.3425 121.686 96.2663 109.806 96.2663H106.887C104.681 105.022 100.038 110.584 93.431 114.159C98.3809 116.255 103.068 118.926 107.397 122.117C108.204 122.716 109.168 123.065 110.171 123.121C111.174 123.177 112.172 122.938 113.04 122.432L125.764 115.078C127.355 114.156 128.677 112.83 129.595 111.235C130.514 109.639 130.999 107.83 131 105.988V42.3277C130.999 40.4857 130.514 38.6763 129.595 37.0809C128.677 35.4855 127.355 34.16 125.764 33.2373L70.7361 1.4072C69.1444 0.485383 67.3382 0 65.4998 0C63.6614 0 61.8556 0.485383 60.2639 1.4072L5.24534 33.2373C3.65179 34.1581 2.32797 35.4829 1.40726 37.0785C0.486555 38.6742 0.00124162 40.4846 0 42.3277V105.988C0.00124162 107.831 0.486555 109.642 1.40726 111.237C2.32797 112.833 3.65179 114.158 5.24534 115.078L17.9505 122.432C18.8207 122.933 19.817 123.17 20.8189 123.114C21.8208 123.058 22.7849 122.711 23.5941 122.117C27.9142 118.921 32.5954 116.247 37.5409 114.15ZM97.2306 80.7226C97.2306 106.898 89.5206 107.455 65.4817 107.455C41.4427 107.455 33.7323 106.898 33.7323 80.7226C33.7323 67.3796 41.4427 53.9994 65.4817 53.9994C89.5206 53.9994 97.2306 67.3425 97.2306 80.6855V80.7226ZM45.6592 67.3053C41.0256 71.5487 42.323 84.3068 53.0729 74.4179C57.7157 70.1281 56.4276 57.37 45.6592 67.2682V67.3053Z" fill="#603CED"/>
+              </svg> 
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <svg width="70" height="70" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M109.19 127.81C99.0908 134.663 87.3635 138.733 75.19 139.61C73.46 139.75 71.71 139.81 69.96 139.81C68.21 139.81 66.4899 139.75 64.7799 139.62C52.6067 138.734 40.8808 134.661 30.7799 127.81H109.19ZM20.19 20.6699L50.5099 46.39C54.6231 42.9504 59.5747 40.6627 64.8599 39.76V0C47.9374 1.21787 32.0404 8.56721 20.15 20.6699H20.19ZM43.7701 54.3199L13.4 28.58C4.67001 40.5449 -0.0232684 54.9787 8.67452e-05 69.7899C8.67452e-05 71.7899 0.0834201 73.7899 0.250087 75.7899H40.0499C38.5809 68.4291 39.877 60.7852 43.69 54.3199H43.7701ZM75.2701 0.0100098V39.7699C80.5128 40.6729 85.4244 42.9426 89.5098 46.35L119.84 20.62C107.964 8.56358 92.1086 1.23823 75.2301 0.0100098H75.2701ZM126.55 28.58L96.2301 54.2899C100.066 60.7685 101.373 68.4363 99.9 75.8199H139.74C139.913 73.8199 140 71.8199 140 69.8199C140.016 54.9928 135.304 40.5467 126.55 28.58ZM1.92977 86.22C2.78119 89.7734 3.91124 93.2542 5.30966 96.63H134.69C136.088 93.2542 137.218 89.7734 138.07 86.22H1.92977ZM10.6798 107.03C11.5198 108.37 12.4099 109.67 13.3399 110.95C14.9834 113.219 16.7634 115.387 18.67 117.44H121.32C123.214 115.401 124.984 113.251 126.62 111C127.56 109.707 128.456 108.373 129.31 107L10.6798 107.03Z" fill="url(#paint0_linear_8_748)"/>
+                <defs>
+                <linearGradient id="paint0_linear_8_748" x1="0" y1="69.905" x2="140" y2="69.905" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FC7421"/>
+                <stop offset="1" stop-color="#FEBC5A"/>
+                </linearGradient>
+                </defs>
+              </svg>
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <svg width="70" height="70" viewBox="0 0 128 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.9199 140.52C64.623 140.715 64.2753 140.819 63.9199 140.819C63.5645 140.819 63.2169 140.715 62.9199 140.52L28.2598 117.87C28.0081 117.702 27.8018 117.474 27.6592 117.208C27.5165 116.941 27.4419 116.643 27.4419 116.34C27.4419 116.037 27.5165 115.74 27.6592 115.473C27.8018 115.206 28.0081 114.978 28.2598 114.81L125.01 51.5601C125.287 51.3836 125.606 51.2833 125.934 51.2693C126.262 51.2553 126.589 51.328 126.88 51.4801C127.177 51.6325 127.427 51.8628 127.603 52.1464C127.779 52.43 127.875 52.7563 127.88 53.0901V98.4C127.88 98.7041 127.805 99.0035 127.66 99.2708C127.515 99.538 127.305 99.7647 127.05 99.9301L64.9199 140.52ZM12.2598 107.41C12.5585 107.601 12.9055 107.702 13.2598 107.702C13.6141 107.702 13.961 107.601 14.2598 107.41L127.01 33.7001C127.265 33.5347 127.475 33.308 127.62 33.0408C127.765 32.7735 127.84 32.4741 127.84 32.1701V2.65003C127.84 2.16469 127.647 1.69928 127.304 1.35609C126.961 1.01289 126.495 0.820075 126.01 0.820075H101.86C101.504 0.819087 101.156 0.923406 100.86 1.12L0.859863 66.51C0.605358 66.6761 0.396371 66.9029 0.251465 67.1701C0.106559 67.4372 0.0302191 67.7362 0.0297852 68.04V98.4C0.0293154 98.7041 0.105013 99.0035 0.25 99.2708C0.394987 99.538 0.604722 99.7647 0.859863 99.9301L12.2598 107.41ZM0 47.12C0.000470072 47.4495 0.0898763 47.7728 0.258789 48.0557C0.427702 48.3386 0.669645 48.5706 0.959473 48.7273C1.2493 48.884 1.57608 48.9595 1.90527 48.9459C2.23447 48.9323 2.55415 48.8301 2.83008 48.65L70.8301 4.18006C71.1591 3.96414 71.4093 3.64785 71.5444 3.27821C71.6795 2.90856 71.6919 2.50527 71.5796 2.12806C71.4673 1.75085 71.2366 1.41983 70.9214 1.18421C70.6061 0.948594 70.2236 0.820932 69.8301 0.820075H1.83008C1.34473 0.820075 0.878836 1.01289 0.535645 1.35609C0.192453 1.69928 0 2.16469 0 2.65003V47.12Z" fill="url(#paint0_linear_8_755)"/>
+                <defs>
+                <linearGradient id="paint0_linear_8_755" x1="120.85" y1="-12.4999" x2="-3.30004" y2="124.95" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FC932C"/>
+                <stop offset="0.35" stop-color="#FCAD36"/>
+                <stop offset="0.75" stop-color="#FDC53F"/>
+                <stop offset="1" stop-color="#FDCE42"/>
+                </linearGradient>
+                </defs>
+              </svg>
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <svg width="70" height="70" viewBox="0 0 141 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M132.502 86.8325C132.24 86.5689 131.928 86.3596 131.585 86.2168C131.242 86.074 130.874 86.0005 130.502 86.0005C130.13 86.0005 129.762 86.074 129.419 86.2168C129.076 86.3596 128.764 86.5689 128.502 86.8325L124.502 90.8325C124.238 91.0946 124.029 91.406 123.886 91.7493C123.743 92.0925 123.67 92.4608 123.67 92.8325C123.67 93.2043 123.743 93.5723 123.886 93.9155C124.029 94.2588 124.238 94.5704 124.502 94.8325L126.502 96.8325C127.752 98.369 128.388 100.315 128.286 102.293C128.184 104.271 127.352 106.141 125.951 107.541C124.55 108.941 122.679 109.771 120.701 109.871C118.722 109.971 116.778 109.334 115.242 108.083L90.2422 83.0825C100.622 72.0825 109.062 60.6125 114.242 50.3225C122.922 33.1625 119.922 24.7524 115.882 20.7024C103.152 7.972 85.8858 0.820068 67.8823 0.820068C49.8788 0.820069 32.6127 7.972 19.8823 20.7024C7.15193 33.4328 5.69094e-07 50.6989 0 68.7024C-5.69093e-07 86.7059 7.15193 103.972 19.8823 116.702V116.702C22.5623 119.392 26.1523 120.602 30.3623 120.602C44.1023 120.602 64.542 107.742 82.252 91.0425L107.252 116.042C110.852 119.644 115.736 121.668 120.829 121.669C125.921 121.67 130.806 119.648 134.407 116.047C138.009 112.447 140.033 107.563 140.034 102.471C140.035 97.3784 138.012 92.494 134.412 88.8923L132.502 86.8325ZM94.8423 18.8325C87.9423 21.1725 80.2419 25.4025 72.4419 30.8325C59.6919 23.2825 50.2419 20.7724 39.4419 19.7524C47.8126 14.8619 57.2987 12.2017 66.9917 12.0266C76.6847 11.8515 86.2604 14.1674 94.8022 18.7524L94.8423 18.8325ZM37.5522 63.4624C31.2722 51.6424 30.2221 43.1524 29.7021 30.4624C42.4221 30.9724 50.9221 32.0225 62.7021 38.3225C58.1921 42.0425 53.7522 46.0725 49.5122 50.3225C45.2722 54.5725 41.2222 58.9824 37.5522 63.4224V63.4624ZM19.062 40.2124C20.062 50.9624 22.5921 60.4123 30.1221 73.1423C26.9563 77.578 24.1156 82.237 21.6221 87.0825C20.2334 89.7883 19.0371 92.5885 18.042 95.4624C13.4732 86.9353 11.1662 77.3794 11.3413 67.707C11.5164 58.0346 14.1676 48.5686 19.042 40.2124H19.062ZM27.9321 108.742C26.7321 107.542 26.6823 101.982 31.6523 92.1523C36.9723 81.6323 46.152 69.5824 57.502 58.2424C79.882 35.8624 98.3421 27.9324 105.372 27.9324C106.313 27.8331 107.256 28.0939 108.012 28.6624C109.212 29.8624 109.262 35.4325 104.292 45.2625C99.592 54.5425 91.8921 65.0123 82.3521 75.1323L70.7622 63.5425C70.5001 63.2788 70.1885 63.0695 69.8452 62.9268C69.502 62.784 69.134 62.7104 68.7622 62.7104C68.3905 62.7104 68.0224 62.784 67.6792 62.9268C67.336 63.0695 67.0243 63.2788 66.7622 63.5425L62.7622 67.5425C62.4986 67.8046 62.2893 68.116 62.1465 68.4592C62.0037 68.8025 61.9302 69.1707 61.9302 69.5425C61.9302 69.9142 62.0037 70.2823 62.1465 70.6255C62.2893 70.9687 62.4986 71.2804 62.7622 71.5425L74.3521 83.1323C49.9121 106.162 30.9021 111.722 27.9321 108.722V108.742Z" fill="url(#paint0_linear_8_756)"/>
+                <defs>
+                <linearGradient id="paint0_linear_8_756" x1="28.8822" y1="119.072" x2="115.392" y2="28.2825" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#372584"/>
+                <stop offset="1" stop-color="#613CEF"/>
+                </linearGradient>
+                </defs>
+              </svg> 
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <svg width="70" height="70" viewBox="0 0 128 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M101.541 68.14C106.801 49.52 104.311 34.48 97.9709 23.14V23.07C111.166 31.5667 120.751 44.6449 124.881 59.7862C129.01 74.9275 127.391 91.0611 120.337 105.08C113.282 119.1 101.29 130.013 86.6696 135.719C72.0495 141.426 55.8349 141.521 41.1486 135.987C26.4623 130.453 14.3429 119.682 7.12371 105.747C-0.0955111 91.8112 -1.90381 75.6977 2.04705 60.5089C5.99792 45.3201 15.4287 32.13 28.5231 23.4786C41.6175 14.8273 57.4496 11.3263 72.9709 13.65C68.9409 9.86002 60.801 3.22 50.321 0C68.141 0 78.8007 7.56997 85.0407 16.72L85.2409 16.79C91.7909 27.07 95.6709 40.32 91.2409 53.86C90.6409 44.78 87.0607 39.65 87.0607 39.65C86.7007 48.48 81.4508 62.93 68.9108 70.93C68.9108 70.93 72.8509 63.89 72.9709 57.56C69.1509 61.62 61.2708 66.27 52.4108 67.51C40.0508 69.07 31.9207 75.98 28.8307 86.38C26.9009 92.9295 27.6482 99.977 30.9084 105.976C34.1686 111.975 39.6755 116.436 46.2209 118.38C61.8809 123.04 89.0509 112.48 103.221 90.38C98.2511 92.0854 93.0604 93.0621 87.8107 93.28C101.911 82.82 108.981 73.28 111.451 62.28C108.599 64.9126 105.222 66.91 101.541 68.14ZM58.1963 110.164C54.4884 111.134 50.563 110.84 47.0405 109.33C45.7234 108.758 44.4837 108.022 43.3506 107.14L48.3506 106.27L40.4805 103.63L47.9805 98.34L39.4106 98.0999L40.8408 91.1799L36.8408 96.39C36.195 92.6122 36.8264 88.7269 38.6352 85.348C40.4441 81.9692 43.3272 79.2895 46.8291 77.7322C50.331 76.1749 54.2521 75.829 57.9726 76.749C61.6932 77.669 65.001 79.8025 67.3735 82.8124C69.7461 85.8223 71.0481 89.537 71.0737 93.3695C71.0994 97.2019 69.8472 100.934 67.5151 103.975C65.1831 107.017 61.9041 109.194 58.1963 110.164Z" fill="#FD9037"/>
+              </svg>          
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <svg width="70" height="70" viewBox="0 0 150 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M108.024 48.4133C103.416 53.015 58.0618 107.41 1.82122 112.891C0.642619 113.009 0.0640972 112.569 0.0105246 112.258C-0.600203 108.643 25.5752 102.84 24.7717 97.4982C23.1737 86.8834 24.6031 76.0326 28.8948 66.1952C33.1864 56.3579 40.166 47.934 49.03 41.8936C57.894 35.8531 68.2816 32.4419 78.9972 32.0525C89.7128 31.6631 100.32 34.3114 109.598 39.6926C112.577 41.4303 112.802 43.6292 108.024 48.4133ZM41.7004 130.182C42.7718 131.169 43.8433 132.124 44.9148 133.046C55.6561 141.88 69.2554 146.474 83.147 145.961C97.0386 145.449 110.262 139.865 120.325 130.263C130.388 120.662 136.593 107.706 137.771 93.8393C138.949 79.9727 135.019 66.1537 126.72 54.9887C124.267 51.6957 131.478 40.4971 129.678 38.695C129.11 38.1265 128.167 38.5877 127.213 40.1002C126.624 41.0441 92.2087 97.0692 47.0362 121.826C42.5254 124.315 37.1039 125.784 41.7004 130.182V130.182ZM145.803 19.1404C143.992 21.5325 144.849 23.9781 145.374 26.4989C146.607 32.3234 142.46 35.9597 141.26 34.4151C134.798 26.5467 126.586 20.3018 117.281 16.1799C115.395 15.4076 118.245 11.1062 121.749 10.3339C124.963 9.64738 128.445 10.6986 130.738 7.6737C136.32 0.293803 144.485 -1.36884 147.625 1.01246C150.764 3.39377 151.385 11.7605 145.803 19.1404V19.1404ZM143.789 6.0325C142.717 5.21728 140.103 5.63564 138.035 7.72732C137.941 7.82013 137.87 7.93325 137.828 8.05788C137.785 8.18251 137.772 8.31529 137.788 8.44599C137.804 8.5741 137.849 8.69697 137.919 8.80489C137.99 8.91282 138.084 9.0029 138.195 9.06815C139.688 9.98037 141.091 11.0327 142.385 12.211C142.482 12.3016 142.597 12.3697 142.723 12.4105C142.849 12.4512 142.983 12.4638 143.114 12.4471C143.242 12.4235 143.363 12.3731 143.47 12.2992C143.577 12.2252 143.667 12.1294 143.735 12.018C145.171 9.4114 144.86 6.84772 143.789 6.0325Z" fill="url(#paint0_linear_8_754)"/>
+                <defs>
+                <linearGradient id="paint0_linear_8_754" x1="52.5012" y1="145.882" x2="150.151" y2="6.53929" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#181661"/>
+                <stop offset="0.09" stop-color="#311D70"/>
+                <stop offset="0.33" stop-color="#6D2D93"/>
+                <stop offset="0.55" stop-color="#9C3AB0"/>
+                <stop offset="0.74" stop-color="#BF43C4"/>
+                <stop offset="0.9" stop-color="#D349D0"/>
+                <stop offset="1" stop-color="#DB4BD5"/>
+                </linearGradient>
+                </defs>
+              </svg>
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="top-apps-section">
+          <h2>
+            Top NFT Marketplaces
+          </h2>
+          <ul class="top-apps-list">
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="top-apps-section">
+          <h2>
+            Top Web3 Apps
+          </h2>
+          <ul class="top-apps-list">
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+            <li>
+              <img alt="logo" src="https://picsum.photos/70">
+              <div class="top-app-name">
+                Name
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div class="list-apps-container">
-        <ul class="list-apps">
-          <li>
-            <div class="logo-app-list">
-              <img alt="logo" src="https://picsum.photos/70">
+      <div class="list-apps-section-container">
+        <section class="list-apps-section">
+          <div class="list-header">
+            <div class="categories-btn">
+              <button>
+                Popular
+              </button>
+              <button>
+                Newest
+              </button>
             </div>
-            <div class="body-app-list">
-              <h3>
-                App name
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet. Est rerum quos qui odit pariatur...
-              </p>
-            </div>
-            <div class="stats-app-list">
-              <span>^</span>
-                10328
-            </div>
-          </li>
-          <li>
-            <div class="logo-app-list">
-              <img alt="logo" src="https://picsum.photos/70">
-            </div>
-            <div class="body-app-list">
-              <h3>
-                App name
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet. Est rerum quos qui odit pariatur...
-              </p>
-            </div>
-            <div class="stats-app-list">
-              <span>^</span>
-                10328
-            </div>
-          </li>
-          <li>
-            <div class="logo-app-list">
-              <img alt="logo" src="https://picsum.photos/70">
-            </div>
-            <div class="body-app-list">
-              <h3>
-                App name
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet. Est rerum quos qui odit pariatur...
-              </p>
-            </div>
-            <div class="stats-app-list">
-              <span>^</span>
-                10328
-            </div>
-          </li>
-          <li>
-            <div class="logo-app-list">
-              <img alt="logo" src="https://picsum.photos/70">
-            </div>
-            <div class="body-app-list">
-              <h3>
-                App name
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet. Est rerum quos qui odit pariatur...
-              </p>
-            </div>
-            <div class="stats-app-list">
-              <span>^</span>
-                10328
-            </div>
-          </li>
-        </ul>
+            <button id="show-more-btn">Show more</button>
+          </div>
+          <div class="list-apps-container">
+            <ul class="list-apps">
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                    10328
+                </div>
+              </li>
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                    10328
+                </div>
+              </li>
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                      10328
+                </div>
+              </li>
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                    10328
+                </div>
+              </li>
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                    10328
+                </div>
+              </li>
+              <li>
+                <div class="logo-app-list">
+                  <img alt="logo" src="https://picsum.photos/70">
+                </div>
+                <div class="body-app-list">
+                  <h3>
+                    App name
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet est rerum quos...
+                  </p>
+                </div>
+                <div class="stats-app-list">
+                  <span>
+                    <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                    10328
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
     <footer>
       <ul>
         <li>
