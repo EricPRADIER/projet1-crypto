@@ -1,5 +1,5 @@
 .linear-gradient {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#272525, #000000);
   
 }
 nav 
@@ -17,7 +17,7 @@ nav .main_pages
     align-items: flex-start;
 }
  
-nav .main_pages li 
+nav .main_pages li a
 {
     width: 100%;
     margin: 0 auto;
@@ -30,7 +30,7 @@ nav .main_pages li
     color: rgb(255, 255, 255);
 }
  
-nav li:hover 
+nav li:hover a
 {
     color: rgb(221, 74, 48)
 }
@@ -52,7 +52,7 @@ label, #toggle
         height: 60px;
     }
  
-    nav .main_pages 
+    nav .main_pages a
     {
         display: none;
     }
@@ -65,7 +65,7 @@ label, #toggle
         height: 120px;
     }
  
-    nav .main_pages li {
+    nav .main_pages li a {
         width: 50%;
     }
  
