@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&display=swap');
+
+/*primary color(couleur wild code school) : rgb(247, 108, 108) */
+/*secondary color(le blanc): whitesmoke*/
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inter' sans-serif;
 }
 
+:root {
+    --main-bg-color: rgb(247, 108, 108);
+  }
+  /*--main-bg-color: rgb(247, 108, 108);*/
+
 body {
-    width: 390px;
-    max-width: 390px;
+    /*width: 390px;*/
+    /*max-width: 390px;*/
     max-height: 844px;
     min-height: 844px; /* marche pas */
     background-color: white;
@@ -18,27 +29,28 @@ main {
 
 .nav {
     background-color: rgb(255, 117, 74);
+    /*background-color: var(--primaryColor);*/
     height: 50px;
 }
 
 .beginnersBlog div {
     margin-top: 4%;
     background-color: rgb(20, 241, 149);
-    height: 170px;
+    height: 200px;
     width: 100%;
 }
 
 .beginnersBlog {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 93.5%;
     margin-left: 3%;
     min-width: 22rem;
 }
 
 .devresource1-3 {
     height: 40px;
-    width: 80%;
+    width: 93.5%;
     margin-left: 3%;
     min-width: 22rem;
     background: linear-gradient(180deg,#14f195 -5.71%,transparent);
@@ -50,8 +62,18 @@ main {
     border-radius:  12px 0px 0px 0px;
 }
 
+.devresource1-1 h1 {
+    margin: 6%;
+    font-size: xx-large;
+}
+
 .devresource1-2 {
     border-radius:  0px 12px 0px 0px;
+}
+
+.devresource1-2 p {
+    margin: 6%;
+    font-size: large;
 }
 
 .devresource1-1 {
@@ -90,19 +112,6 @@ main {
     font-size: x-large;
 }  
 
-.bloc button {  
-    background-color: #000;
-    color: white;
-    position: -10%;
-    margin-left: 3%;
-    height: 10%;
-    width: 46%;
-    border-radius: 40px;
-    font-size: larger;
-    top: 380px;
-    /*top: calc(article.height-button.height);*/
-} 
-
 .bloc1 {
     background-color: rgb(255, 117, 74);
 }  
@@ -122,30 +131,87 @@ main {
     background-color: rgb(235, 84, 188);
 } 
 
+.blackButton {  
+    background-color: #000;
+    color: white;
+    position: -10%;
+    margin-left: 3%;
+    height: 10%;
+    width: 46%;
+    border-radius: 40px;
+    font-size: larger;
+    top: 380px;
+    /*top: calc(article.height-button.height);*/
+} 
+
+.whiteButton {  
+    position: -10%;
+    margin-left: 3%;
+    height: 10%;
+    width: 46%;
+    border-radius: 40px;
+    background:transparent;
+    border: solid 1px black;
+    font-size: larger;
+    top: 380px;
+    /*top: calc(article.height-button.height);*/
+} 
+
 .toolsContainer {
     background-color: rgb(128, 236, 255);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 360px;
     margin-left: 3%;
     margin-bottom: 3%;
-    width: 94%;
+    width: 94%; 
     gap: 10px;
 }
 
 .toolBloc {
     background-color: rgb(128, 236, 255);
-    height: 200px;
+    height: 360px;
 }
 
-.ToolBloc1,.ToolBloc3 {
+.toolBloc1 {
     background-color:black;
+}
+
+.toolBloc1, .toolBloc2, .toolBloc3, .toolBloc4,  .toolBloc5, .toolBloc6  {
     margin-left: 3%;
     margin-top: 3%;
     width: 94%;
 }
 
-.ToolBloc3 {
-    background-image: url("/assets/images/chart-1905225_960_720.webp");
+.toolBloc2 h1, .toolBloc4 h1 {
+    font-size: xx-large;
+}
+
+.toolBloc3 {
+    background-image: url("/pages/devresources/assets/images/chart-1905225_960_720.webp");
+}
+
+.toolBloc5 {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    /*background-clip: url("/media/cc0-videos/flower.webm");*/
+}
+
+.toolblock2 h1, .toolblock2 p {
+    padding-left: 6px;  
+}
+
+.toolBloc1 p {
+    font-size: smaller;
+    color:  white;
+    padding-left: 6px;
 }
 
 footer {
@@ -154,14 +220,33 @@ footer {
 }
 
 @media screen and (max-width: 390px) { 
+
     body {
         max-width: 390px;
         max-height: 844px;
     }
 }
 
-@media screen and (min-width:601px) { 
-    body {
-        max-width: 1200px;
-    }    
-}
+@media screen and (min-width:391px) and (max-width:800px) { 
+
+    .toolBloc {
+        height: 390px;
+    }
+
+    .toolsContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}    
+
+@media screen and (min-width:801px) { 
+
+    .toolsContainer {
+        /*
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;*/
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}    
