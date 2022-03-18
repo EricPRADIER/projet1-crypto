@@ -1,48 +1,47 @@
-/*
-var item = document.getElementsByClassName("blackButton");
-item.addEventListener("mouseover", func, false);
-
-function func()
-{  
-    var item = document.getElementsByClassName("blackButton");
-   item.setAttribute("style", "background-color:white;")
-}*/
-
-/*
-var item = document.getElementById("button");
-item.addEventListener("mouseover", func, false);
-
-function func()
-{  
-   var item = document.getElementById("button");
-   item.setAttribute("style", "background-color:blue;")
-}*/
-
-
-
-//const blackButton = document.querySelector(".blackButton");
 
 const blackButton = document.getElementsByClassName("blackButton");
 const whiteButton = document.getElementsByClassName("whiteButton");
+// console.log(blackButton);
 
-blackButton.addEventListener("mouseover", function (event) {
-    //blackButton.style.backgroundColor = "white";
-    event.target.style.backgroundColor = "white";
+for (let i=0; i<blackButton.length; i++) {
+  blackButton[i].addEventListener("mouseover", function (event) {
+    //console.log('Over1 '+event.target.style.Color, event.target.style.backgroundColor);
+      event.target.style.backgroundColor = "white";
+      event.target.style.color = "black";
+    });
+} 
+
+for (let i=0; i<blackButton.length; i++) {
+  blackButton[i].addEventListener("mouseleave", function (event) {
+      event.target.style.backgroundColor = "black";
+      event.target.style.color = "white";
+    });
+}
+
+for (let i=0; i<whiteButton.length; i++) {
+  whiteButton[i].addEventListener("mouseover", function (event) {
+      event.target.style.backgroundColor = "white";
   });
-  
-whiteButton.addEventListener("mouseover", function (event) {
-    event.target.style.color = "orange";
-    event.target.backgroundColor = "red";
-    //whiteButton.style.backgroundColor = "white";
-});
+}
+
+for (let i=0; i<whiteButton.length; i++) {
+  whiteButton[i].addEventListener("mouseleave", function (event) {
+      event.target.style.backgroundColor = "rgb(128, 236, 255)";
+  });
+}
 
 
-//  test.addEventListener("mouseover", function( event ) {
-    // on met l'accent sur la cible de mouseover
- //   event.target.style.color = "orange";
+// A revoir
+var video = document.getElementById("background-video");
+var btn = document.getElementById("btnVideo");
+ 
+function playAndPause () {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause II";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play ▶";
+  }
+}
 
- /*
- function calcRectArea(width, height) {
-    return width * height;
-  }*/
-  
