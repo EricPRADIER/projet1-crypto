@@ -67,7 +67,6 @@ h1 {
 
 
 svg {
-  margin-right: 1rem;
   vertical-align: middle;
 }
 
@@ -101,13 +100,17 @@ h1 {
 }
 
 .trending-apps-list li {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 50%;
   max-width: 50%;
   padding: .75rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.trending-apps-list img {
-  border-radius: .20rem;
+.trending-app-name {
+  padding-top: .7rem;
 }
 
 .top-apps-section {
@@ -133,14 +136,14 @@ h1 {
   align-items: center;
 }
 
-.top-apps-list img {
-  border-radius: .20rem;
-  padding-bottom: .20rem;
+.top-apps-list svg {
+  margin: 0;
 }
 
 .top-app-name {
   color: rgb(168, 168, 168);
   font-weight: 300;
+  padding-top: .5rem;
 }
 
 .list-header {
@@ -209,15 +212,15 @@ button:first-child {
   align-items: center;
 }
 
-.list-apps img {
-  border-radius: 50%;
-  padding-right: .5rem;
-}
-
 .list-apps p {
   color: rgb(168, 168, 168);
   font-weight: 300;
   font-size: .80rem;
+}
+
+.body-app-list {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .list-apps li {
@@ -234,6 +237,11 @@ li:last-child {
 }
 
 @media screen and (min-width: 900px){
+
+  body {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 
   #search-button {
     width: 40%;
@@ -273,10 +281,6 @@ li:last-child {
     flex: 0 0 0;
     padding-right: 2rem;
   }
-  
-  .trending-apps-list img {
-    content:url(https://picsum.photos/150);
-  }
 
   .trending-app-name {
     text-align: center;
@@ -294,10 +298,6 @@ li:last-child {
 
   .top-apps-list li {
     padding-right: 2rem;
-  }
-
-  .top-apps-list img {
-    content:url(https://picsum.photos/90);
   }
 
   .list-apps-section-container {
