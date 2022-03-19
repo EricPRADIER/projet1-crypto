@@ -44,4 +44,3 @@ function playAndPause () {
     btn.innerHTML = "Play ▶";
   }
 }
-

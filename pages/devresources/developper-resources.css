@@ -139,11 +139,6 @@ main {
     width: 46%;
     border-radius: 40px;
     font-size: larger;
-    position: relative;
-    bottom: 4px; /*left: 40px;*/
-    /*margin-top: 20px;*/
-    /*top: 380px;*/
-    /*top: calc(article.height-button.height);*/
 } 
 
 .bloc1 .blackButton {
@@ -174,8 +169,6 @@ main {
     background:transparent;
     border: solid 1px black;
     font-size: larger;
-    top: 380px;
-    /*top: calc(article.height-button.height);*/
 } 
 
 .toolsContainer {
@@ -270,6 +263,7 @@ footer {
     background-color: rgb(255, 117, 74);
     height: 50px;
 }
+
 
 @media screen and (max-width: 390px) { 
 
