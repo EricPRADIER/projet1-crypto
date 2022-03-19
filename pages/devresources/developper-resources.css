@@ -139,9 +139,31 @@ main {
     width: 46%;
     border-radius: 40px;
     font-size: larger;
-    top: 380px;
+    position: relative;
+    bottom: 4px; /*left: 40px;*/
+    /*margin-top: 20px;*/
+    /*top: 380px;*/
     /*top: calc(article.height-button.height);*/
 } 
+
+.bloc1 .blackButton {
+    position: relative;
+    top: 60px; 
+}
+
+.bloc2 .blackButton {
+    position: relative;
+    top: 
+    18px; 
+}
+.bloc3 .blackButton {
+    position: relative;
+    top: 44px; 
+}
+.bloc4 .blackButton {
+    position: relative;
+    top: 70px; 
+}
 
 .whiteButton {  
     position: -10%;
