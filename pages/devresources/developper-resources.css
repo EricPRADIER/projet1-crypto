@@ -36,7 +36,7 @@ main {
 .beginnersBlog div {
     margin-top: 4%;
     background-color: rgb(20, 241, 149);
-    height: 200px;
+    height: 320px;
     width: 100%;
 }
 
@@ -72,9 +72,21 @@ main {
 }
 
 .devresource1-2 p {
-    margin: 6%;
+    margin: 20px;
     font-size: large;
+    height: 200px;
 }
+
+.blackButtonBegin {  
+    background-color: #000;
+    color: white;
+    margin-left: 3%;
+    height: 40px;
+    width: 150px;
+    border-radius: 40px;
+    font-size: small;
+    margin-top: 20px;
+} 
 
 .devresource1-1 {
     font-size: xx-large;
@@ -84,31 +96,20 @@ main {
 }
 
 .dev-res-container {
-    margin: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 6%;
+    margin-top: 100px;
+    margin-bottom: 3%;
 }  
     
-.bloc {  
-    min-height: 400px;
-    min-width: 300px;
-    border-radius: 6px;
-}  
-
 .bloc h1 {  
     margin-top: 10%;
     margin-left: 4%;
     width: 70%;
-    font-size: xx-large;
 }  
 
 .bloc p {  
     margin-top: 4%;
     margin-left: 4%;
     width: 70%;
-    font-size: x-large;
 }  
 
 .bloc1 {
@@ -130,6 +131,70 @@ main {
     background-color: rgb(235, 84, 188);
 } 
 
+.controle{
+    display:grid;
+    grid:2rem/repeat(2,1fr);
+    place-items:center
+}
+    
+.controle button{
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+} 
+       
+.contenu-carrousel {
+    margin: 5rem auto;
+
+    width: 260px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px
+}
+
+.carrousel {
+    height:100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carrousel div {
+    backface-visibility: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    outline: 1px solid transparent;
+}
+    
+.carrousel div:nth-child(1) {
+    transform: rotateY(0) translateZ(270px);
+}
+    
+.carrousel div:nth-child(2) {
+    transform: rotateY(60deg) translateZ(270px);
+}
+    
+.carrousel div:nth-child(3) {
+    transform: rotateY(120deg) translateZ(270px);
+}
+    
+.carrousel div:nth-child(4) { 
+    transform: rotateY(180deg) translateZ(270px);
+}
+    
+.carrousel div:nth-child(5) {
+    transform: rotateY(240deg) translateZ(270px);
+} 
+    
+.carrousel div:nth-child(6) {
+    transform: rotateY(300deg) translateZ(270px);
+}	
+
 .blackButton {  
     background-color: #000;
     color: white;
@@ -143,19 +208,26 @@ main {
 
 .bloc1 .blackButton {
     position: relative;
-    top: 60px; 
+    top: 70px; 
 }
 
 .bloc2 .blackButton {
     position: relative;
-    top: 
-    18px; 
+    top: 60px; 
 }
 .bloc3 .blackButton {
     position: relative;
-    top: 44px; 
+    top: 80px; 
 }
 .bloc4 .blackButton {
+    position: relative;
+    top: 80px; 
+}
+.bloc5 .blackButton {
+    position: relative;
+    top: 35px; 
+}
+.bloc6 .blackButton {
     position: relative;
     top: 70px; 
 }
@@ -225,6 +297,12 @@ main {
     background-image: url("/pages/devresources/assets/images/chart-1905225_960_720.webp");
 }
 
+.toolBloc2 p, .toolBloc4 p, .toolBloc6 p {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
 #background-video {
     height: 100%;
     width: 100%;
@@ -272,12 +350,17 @@ footer {
         max-height: 844px;
     }
 
+    .beginnersBlog div {
+        height: 320px;
+    }
+    .devresource1-2 p {
+        height: 200px;
+    }
 
     .toolBloc5 #background-video, .toolBloc {
         height: 270px;
     }
 
-    
     .toolsContainer {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -285,6 +368,13 @@ footer {
 
 @media screen and (min-width:391px) and (max-width:800px) { 
 
+    .beginnersBlog div {
+        height: 280px;
+    }
+    .devresource1-2 p {
+        height: 160px;
+    }
+    
     .toolBloc5 #background-video, .toolBloc {
         height: 320px;
     }
@@ -296,6 +386,12 @@ footer {
 }    
 
 @media screen and (min-width:801px) { 
+    .beginnersBlog div {
+        height: 200px;
+    }
+    .devresource1-2 p {
+        height: 80px;
+    }
 
     .toolBloc5 #background-video, .toolBloc {
         height: 320px;
