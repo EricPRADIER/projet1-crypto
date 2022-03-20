@@ -11,16 +11,19 @@
 }
 
 :root {
-    --main-bg-color: rgb(247, 108, 108);
+    --primaryColor: rgb(247, 108, 108);
+    --secondaryColor: whitesmoke;   
+    --navFootColor: rgb(255, 117, 74);
+    --typoInterSS: 'Inter sans-serif';
+    font-family: var(--typoInterSS);
   }
-  /*--main-bg-color: rgb(247, 108, 108);*/
 
 body {
     /*width: 390px;*/
     /*max-width: 390px;*/
     max-height: 844px;
     min-height: 844px; /* marche pas */
-    background-color: white;
+    background-color: var(--secondaryColor);
 }
 
 main {
@@ -28,8 +31,7 @@ main {
 }
 
 .nav {
-    background-color: rgb(255, 117, 74);
-    /*background-color: var(--primaryColor);*/
+    background-color: var(--navFootColor);
     height: 50px;
 }
 
@@ -79,13 +81,18 @@ main {
 
 .blackButtonBegin {  
     background-color: #000;
-    color: white;
+    color: var(--secondaryColor);
     margin-left: 3%;
     height: 40px;
     width: 150px;
     border-radius: 40px;
     font-size: small;
     margin-top: 20px;
+} 
+
+.blackButtonBegin:hover {
+    background-color: var(--secondaryColor);
+    color: black;
 } 
 
 .devresource1-1 {
@@ -141,7 +148,7 @@ main {
     font-size: 2rem;
     border: none;
     cursor: pointer;
-    color: white;
+    color: var(--secondaryColor);
     background-color: black;
 } 
        
@@ -197,7 +204,7 @@ main {
 
 .blackButton {  
     background-color: #000;
-    color: white;
+    color: var(--secondaryColor);
     position: -10%;
     margin-left: 3%;
     height: 10%;
@@ -243,6 +250,10 @@ main {
     font-size: larger;
 } 
 
+.whiteButton:hover {
+    background-color: var(--secondaryColor);
+} 
+
 .toolsContainer {
     background-color: rgb(128, 236, 255);
     display: grid;
@@ -269,7 +280,7 @@ main {
 
 .toolBloc1 p {
     font-size: smaller;
-    color:  white;
+    color:  var(--secondaryColor);
     padding-left: 6px;
 }
 
@@ -310,7 +321,7 @@ main {
 }
 
 .toolBloc5 p {
-    color: white;
+    color: var(--secondaryColor);
     font-family: Trebuchet MS;
     font-weight: bold;
     text-align: center;
@@ -323,22 +334,20 @@ main {
 }
 
 #btnVideo{
-    color: white;
-    font-family: Trebuchet MS;
+    color: var(--secondaryColor);
     font-weight: bold;
     text-align: center;
-
     font-size: 1.5rem;
     background: 0;
     border: 0;
-    margin-left: 42%;
+    margin-left: 40%;
     transform: translateX(-50%);
     transform: translateY(-180%);
 }
 
 
 footer {
-    background-color: rgb(255, 117, 74);
+    background-color: var(--navFootColor);
     height: 50px;
 }
 
