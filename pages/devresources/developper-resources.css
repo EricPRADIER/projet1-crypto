@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&display=swap');
 
-/*primary color(couleur wild code school) : rgb(247, 108, 108) */
-/*secondary color(le blanc): whitesmoke*/
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 :root {
-    --primaryColor: rgb(247, 108, 108);
+    --primaryColor: rgb(247, 108, 108); /*(couleur wild code school) */
     --secondaryColor: whitesmoke;   
     --navFootColor: rgb(255, 117, 74);
-    --typoInterSS: 'Inter sans-serif';
-    font-family: var(--typoInterSS);
+    --fontH1:font-weight: 800;
+    --fontH2:font-weight: 400;
+  }
+
+h1 {
+    font-weight: var(--fontH1);
+    /*font-size: 2.5rem;*/
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: var(--fontH2);
+    font-size: 1.25rem;
   }
 
 body {
-    /*width: 390px;*/
-    /*max-width: 390px;*/
-    max-height: 844px;
-    min-height: 844px; /* marche pas */
+    max-height: 100vh;
+    /*max-height: 844px;
+    min-height: 844px;*/
     background-color: var(--secondaryColor);
 }
 
@@ -32,14 +39,7 @@ main {
 
 .nav {
     background-color: var(--navFootColor);
-    height: 50px;
-}
-
-.beginnersBlog div {
-    margin-top: 4%;
-    background-color: rgb(20, 241, 149);
-    height: 320px;
-    width: 100%;
+    height: 3.125rem;    
 }
 
 .beginnersBlog {
@@ -50,14 +50,21 @@ main {
     min-width: 22rem;
 }
 
+.beginnersBlog div {
+    margin-top: 4%;
+    background-color: rgb(20, 241, 149);
+    height: 20rem;   
+    width: 100%;
+}
+
 .devresource1-3 {
-    height: 40px;
+    height: 2.5rem;    
     width: 93.5%;
     margin-left: 3%;
     min-width: 22rem;
     background: linear-gradient(180deg,#14f195 -5.71%,transparent);
     clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .devresource1-1 {
@@ -66,7 +73,6 @@ main {
 
 .devresource1-1 h1 {
     margin: 6%;
-    font-size: xx-large;
 }
 
 .devresource1-2 {
@@ -74,20 +80,19 @@ main {
 }
 
 .devresource1-2 p {
-    margin: 20px;
+    margin: 1.25rem;    
     font-size: large;
-    height: 200px;
+    height: 12.5rem;
 }
 
 .blackButtonBegin {  
     background-color: #000;
     color: var(--secondaryColor);
-    margin-left: 3%;
-    height: 40px;
-    width: 150px;
-    border-radius: 40px;
+    height: 2.5rem;
+    width: 9.375rem;
+    border-radius: 2.5rem;
     font-size: small;
-    margin-top: 20px;
+    margin: 1.25rem;
 } 
 
 .blackButtonBegin:hover {
@@ -103,20 +108,20 @@ main {
 }
 
 .dev-res-container {
-    margin-top: 100px;
-    margin-bottom: 3%;
+    margin-top: 4.25rem;
+    margin-bottom: 4%;
 }  
     
 .bloc h1 {  
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 4%;
-    width: 70%;
+    width: 90%;
 }  
 
 .bloc p {  
     margin-top: 4%;
     margin-left: 4%;
-    width: 70%;
+    width: 90%;
 }  
 
 .bloc1 {
@@ -153,12 +158,11 @@ main {
 } 
        
 .contenu-carrousel {
-    margin: 5rem auto;
-
-    width: 260px;
-    height: 300px;
+    margin: 4rem auto;
+    width: 16.25rem;
+    height: 17.5rem;
     position: relative;
-    perspective: 1000px
+    perspective: 62.5rem;
 }
 
 .carrousel {
@@ -171,35 +175,35 @@ main {
 
 .carrousel div {
     backface-visibility: hidden;
-    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    box-shadow: 0 0.625rem 0.625rem rgba(0,0,0,.6);
     position: absolute;
-    width: 260px;
-    height: 300px;
-    outline: 1px solid transparent;
+    width: 16.25rem;
+    height: 17.5rem;
+    outline: 0.063rem solid transparent;    
 }
     
 .carrousel div:nth-child(1) {
-    transform: rotateY(0) translateZ(270px);
+    transform: rotateY(0) translateZ(16.875rem);
 }
     
 .carrousel div:nth-child(2) {
-    transform: rotateY(60deg) translateZ(270px);
+    transform: rotateY(60deg) translateZ(16.875rem);
 }
     
 .carrousel div:nth-child(3) {
-    transform: rotateY(120deg) translateZ(270px);
+    transform: rotateY(120deg) translateZ(16.875rem);
 }
     
 .carrousel div:nth-child(4) { 
-    transform: rotateY(180deg) translateZ(270px);
+    transform: rotateY(180deg) translateZ(16.875rem);
 }
     
 .carrousel div:nth-child(5) {
-    transform: rotateY(240deg) translateZ(270px);
+    transform: rotateY(240deg) translateZ(16.875rem);
 } 
     
 .carrousel div:nth-child(6) {
-    transform: rotateY(300deg) translateZ(270px);
+    transform: rotateY(300deg) translateZ(16.875rem);
 }	
 
 .blackButton {  
@@ -209,44 +213,44 @@ main {
     margin-left: 3%;
     height: 10%;
     width: 46%;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     font-size: larger;
 } 
 
 .bloc1 .blackButton {
     position: relative;
-    top: 70px; 
+    top: 1.9rem; 
 }
 
 .bloc2 .blackButton {
     position: relative;
-    top: 60px; 
+    top: 3rem; 
 }
 .bloc3 .blackButton {
     position: relative;
-    top: 80px; 
+    top: 2.813rem; 
 }
 .bloc4 .blackButton {
     position: relative;
-    top: 80px; 
+    top: 4rem; 
 }
 .bloc5 .blackButton {
     position: relative;
-    top: 35px; 
+    top: 0.6rem;  
 }
 .bloc6 .blackButton {
     position: relative;
-    top: 70px; 
+    top: 1.8rem; 
 }
 
 .whiteButton {  
     position: -10%;
     margin-left: 3%;
     height: 10%;
-    width: 46%;
-    border-radius: 40px;
+    width: 55%;
+    border-radius: 2.5rem;
     background:transparent;
-    border: solid 1px black;
+    border: solid 0.063rem black;
     font-size: larger;
 } 
 
@@ -258,20 +262,21 @@ main {
     background-color: rgb(128, 236, 255);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 360px;
     margin-left: 3%;
     margin-bottom: 3%;
+    /*height: auto;*/
     width: 94%; 
-    gap: 10px;
+    gap: 0.625rem;   
 }
 
 .toolBloc {
     background-color: rgb(128, 236, 255);
-    height: 270px;
+    height: 16.875rem;    
+    /*height: 12rem;*/
 }
 
 .toolBloc br {
-    height: 0.5px;
+    height: 0.01rem;
 }
 
 .toolBloc1 {
@@ -281,11 +286,11 @@ main {
 .toolBloc1 p {
     font-size: smaller;
     color:  var(--secondaryColor);
-    padding-left: 6px;
+    padding-left: 0.375rem;
 }
 
 .toolblock2 h1, .toolblock2 p {
-    padding-left: 6px;  
+    padding-left: 0.375rem;  
 }
 
 .toolBloc1, .toolBloc2, .toolBloc3, .toolBloc4,  .toolBloc5, .toolBloc6  {
@@ -297,7 +302,7 @@ main {
 
 .toolBloc2 h1, .toolBloc4 h1 , .toolBloc6 h1 {
     font-size: xx-large;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 }
 
 .pMargin {
@@ -309,8 +314,8 @@ main {
 }
 
 .toolBloc2 p, .toolBloc4 p, .toolBloc6 p {
-    height: 100px;
-    margin-bottom: 20px;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
 }
 
 
@@ -322,7 +327,6 @@ main {
 
 .toolBloc5 p {
     color: var(--secondaryColor);
-    font-family: Trebuchet MS;
     font-weight: bold;
     text-align: center;
 
@@ -348,44 +352,42 @@ main {
 
 footer {
     background-color: var(--navFootColor);
-    height: 50px;
+    height: 3.125rem;
 }
 
 
 @media screen and (max-width: 390px) { 
 
     body {
-        max-width: 390px;
-        max-height: 844px;
+        max-height: 100vh;
+        /*max-width: 390px;
+        max-height: 844px;*/
     }
 
     .beginnersBlog div {
-        height: 320px;
+        height: 20rem;
     }
+
     .devresource1-2 p {
-        height: 200px;
+        height: 12.5rem;
     }
 
     .toolBloc5 #background-video, .toolBloc {
-        height: 270px;
-    }
-
-    .toolsContainer {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 16.875rem;
     }
 }
 
 @media screen and (min-width:391px) and (max-width:800px) { 
-
     .beginnersBlog div {
-        height: 280px;
-    }
-    .devresource1-2 p {
-        height: 160px;
+        height: 17.5rem;
     }
     
     .toolBloc5 #background-video, .toolBloc {
-        height: 320px;
+        height: 20rem;
+    }
+
+    .devresource1-2 p {
+        height: 10rem;
     }
 
     .toolsContainer {
@@ -396,14 +398,14 @@ footer {
 
 @media screen and (min-width:801px) { 
     .beginnersBlog div {
-        height: 200px;
-    }
-    .devresource1-2 p {
-        height: 80px;
+        height: 12.5rem;
     }
 
     .toolBloc5 #background-video, .toolBloc {
-        height: 320px;
+        height: 20rem;
+    }
+    .devresource1-2 p {
+        height: 5rem;
     }
 
     .toolsContainer {
