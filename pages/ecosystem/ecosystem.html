@@ -21,8 +21,15 @@
   </header>
   <main>
     <div class="search-container">
-      <button id="search-button">Browse by category...
-      </button>
+      <div class="dropdown-container">
+        <button onclick="toggleDropdown()" id="search-button">Browse by category...</button>
+        <div id="dropdown" class="dropdown-content">
+          <a href="#">App(285)</a>
+          <a href="#">NFTs(951)</a>
+          <a href="#">Wallet(68)</a>
+          <a href="#">Others(14)</a>
+        </div>
+      </div>
       <div class="search-input">
         <input class="search-input-bar" type="search" placeholder="Search projects...">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Search">
@@ -300,11 +307,9 @@
                   </svg>                   
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -312,7 +317,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                    10328
+                    6087
                 </div>
               </li>
               <li>
@@ -322,11 +327,9 @@
                   </svg> 
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -334,7 +337,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                    10328
+                    5644
                 </div>
               </li>
               <li>
@@ -344,11 +347,9 @@
                   </svg>
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -356,7 +357,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                      10328
+                      8028
                 </div>
               </li>
               <li>
@@ -370,11 +371,9 @@
                   </svg>                    
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -382,7 +381,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                    10328
+                    3506
                 </div>
               </li>
               <li>
@@ -398,11 +397,9 @@
                   </svg> 
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -410,7 +407,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                    10328
+                    2344
                 </div>
               </li>
               <li>
@@ -420,11 +417,9 @@
                   </svg>
                 </div>
                 <div class="body-app-list">
-                  <h3>
-                    App name
+                  <h3 class="app-list-name">
                   </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet est rerum quos...
+                  <p class="app-list-desc">
                   </p>
                 </div>
                 <div class="stats-app-list">
@@ -432,7 +427,7 @@
                     <svg width="16" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 1.207.707 7.793c-.63.63-.184 1.707.707 1.707h13.172c.89 0 1.337-1.077.707-1.707L8.707 1.207a1 1 0 0 0-1.414 0Z" fill="currentColor"></path>
                     </svg>
                   </span>
-                    10328
+                    6530
                 </div>
               </li>
             </ul>
@@ -449,7 +444,6 @@
           </li>
         </ul>
       </div>
-
     </footer>
 
   </main>

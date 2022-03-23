@@ -13,7 +13,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: var(--secondary-color);
@@ -48,12 +48,43 @@ h1 {
   align-items: center;
 }
 
+.dropdown-container {
+  position: relative;
+  width: 70vw;
+}
+
+.dropdown-content a {
+  color: var(--secondary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.dropdown-container a:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+.show {
+  display: block;
+}
+
 .search-input-bar {
   display: none;
 }
 
 #search-button {
-  width: 80%;
+  width: 100%;
   height: 2rem;
   border-radius: 2rem;
   padding-left: .25rem;
@@ -65,6 +96,9 @@ h1 {
   font-size: 1rem;
 }
 
+#search-button:focus {
+  border-color:var(--primary-color);
+}
 
 .background-img img {
   opacity: 0.20;
@@ -170,8 +204,9 @@ h1 {
   cursor: pointer;
 }
 
-button:first-child {
+button:hover{
   border-bottom: 1px solid red;
+  color: whitesmoke;
 }
 
 #show-more-btn {
@@ -194,6 +229,8 @@ button:first-child {
   transition: box-shadow .25s ease,transform .25s ease;
 }
 
+/* list of apps on the right side */
+
 .list-apps-container {
   border-radius: .3rem;
   padding: 1rem;
@@ -210,12 +247,14 @@ button:first-child {
 
 .list-apps li {
   display: flex;
-  justify-content: space-evenly;
   padding: .4rem;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  word-wrap: break-word;
+  position: relative;
 }
 
-.list-apps p {
+.app-list-desc {
   color: rgb(168, 168, 168);
   font-weight: 300;
   font-size: .80rem;
@@ -226,22 +265,27 @@ button:first-child {
   padding-right: 1rem;
 }
 
-.list-apps li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 li:last-child {
   border: none;
 }
 
-.body-app-list h3{
+.app-list-name {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 svg:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.stats-app-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 3rem;
 }
 
 .footer-gradient {
@@ -284,8 +328,8 @@ footer ul li {
 @media screen and (min-width: 900px){
 
   main {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .background-img img {
@@ -294,8 +338,12 @@ footer ul li {
     margin-left: 10rem;
   }
 
+  .dropdown-container {
+    width: 40vw;
+  }
+
   #search-button {
-    width: 40%;
+    /* width: 40%; */
     height: 2rem;
     border-radius: 2rem;
     padding-left: .25rem;
@@ -337,6 +385,11 @@ footer ul li {
     text-align: center;
   }
 
+  .top-lists-apps-global-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .top-apps-section {
     padding: 1rem;
   }
@@ -351,7 +404,9 @@ footer ul li {
     padding-right: 2rem;
   }
 
-  .list-apps-section-container {
+  /* list of apps on the right side */
+
+  /* .list-apps-section-container {
     display: flex;
     justify-content: flex-end;
   }
@@ -362,16 +417,13 @@ footer ul li {
 
   .list-apps li:hover {
     background-color: rgba(110, 110, 110, 0.397);
+    cursor: pointer;
   }
 
-  .body-app-list p {
-    max-width: 90%;
-  }
+  .body-app-list {
+    max-width: 100%;
+  } */
 
-  .top-lists-apps-global-container {
-    display: flex;
-    justify-content: space-between;
-  }
 
 }
   
