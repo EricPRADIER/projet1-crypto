@@ -239,6 +239,11 @@ button:hover{
   padding: 2px;
 }
 
+.list-apps li:hover {
+  background-color: rgba(110, 110, 110, 0.397);
+  cursor: pointer;
+}
+
 .list-apps {
   background: #222;
   padding: .5rem;
@@ -247,6 +252,7 @@ button:hover{
 
 .list-apps li {
   display: flex;
+  justify-content: space-between;
   padding: .4rem;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -257,10 +263,14 @@ button:hover{
 .app-list-desc {
   color: rgb(168, 168, 168);
   font-weight: 300;
-  font-size: .80rem;
+  font-size: .90rem;
 }
 
 .body-app-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -355,6 +365,11 @@ footer ul li {
     font-size: 1rem;
   }
 
+  .search-input {
+    display: flex;
+    align-items: center;
+  }
+
   .search-input-bar {
     display: inline-block;
     background: rgba(80, 80, 80, 0.521) none repeat scroll 0% 0%;
@@ -364,6 +379,7 @@ footer ul li {
     border-radius: 2rem;
     font-size: 1.25rem;
     padding-left: 1rem;
+    margin-right: .5rem;
   }
 
   input::placeholder {
@@ -403,26 +419,6 @@ footer ul li {
   .top-apps-list li {
     padding-right: 2rem;
   }
-
-  /* list of apps on the right side */
-
-  /* .list-apps-section-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .list-apps-section {
-    max-width: 90%;
-  }
-
-  .list-apps li:hover {
-    background-color: rgba(110, 110, 110, 0.397);
-    cursor: pointer;
-  }
-
-  .body-app-list {
-    max-width: 100%;
-  } */
 
 
 }
