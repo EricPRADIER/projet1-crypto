@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/8874047?s=200&v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/8874047?s=200&v=4">
     <title>WildCoin - New Digital Asset </title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,36 +13,72 @@
 
 <header>
     <nav class="navbar">
-        <ul>
+
+        <ul class="nav-links">
+
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <div class="menu">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="/pages/ecosystem/ecosystem.html">Ecosystem</a></li>
             <li><a href="/pages/devresources/developper-resources.html">Developer resources</a></li>
+        </div>
+
         </ul>
     </nav>
-    </header>
+</header>
 
-    <main>
+<main>
 
-    <div class="bg-img">
-        <img src="https://avatars.githubusercontent.com/u/8874047?s=200&v=4" alt="first background image">
-        <h1> Powerful for developers. </br>Fast for everyone.</h1>
+    <video id="background-video" autoplay loop muted>
+
+        <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+            
+    </video>
+
+    <div class="content">
+                
+        <button id="btnVideo" onclick="playAndPause()"></button>
+                
     </div>
 
-    <div class="cta-button-red"></div>
+    <div class="bg-ss-v">
 
-    <div class="cta-button-white"></div>
+    <div>
+        <h1 class="title"> Powerful for developers. </br>Fast for everyone.</h1>
+    </div> 
+
+    <div class="buttons-cta">
+
+    <div class="btn-wrapper1">
+        <button type="button" class="btn1">EXPLORE THE ECOSYSTEM</button>
+      </div>
+
+    <div class="btn-wrapper2">
+        <button type="button" class="btn2">READ DOCUMENTATION</button>
+      </div>
+
+    </div>
 
     <div class="paragraph">
         <p>WildCoin is a decentralized blockchain built built to enable scable, user-friendy apps for the Wild Code School's community.</p>
-    </div>
+</div>
 
-    </main>
+</div>
 
-    <footer>
-            <p>2022 WildCoin technology</p>
-            <p>Follow us</p>
-            <p>Made by</p>
-    </footer>
+</main>
+
+<footer class="foot">
+
+        <ul class="ft">
+            <li class="first-col">2022 WildCoin technology</li>
+            <li class="second-col">Follow us</li>
+            <li class="third-col">Made by Vaishnavi, Eric, Gregoria</li>
+        </ul>
+
+</footer>
 
 </body>
 
