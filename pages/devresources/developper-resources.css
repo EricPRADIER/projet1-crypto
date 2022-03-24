@@ -100,6 +100,8 @@ body {
     background: linear-gradient(180deg,#14f195 -5.71%,transparent);
     clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
     padding-bottom: 0.625rem;
+    margin-bottom: 6rem;
+
 }
 
 .devresource1-1 {
@@ -281,7 +283,7 @@ body {
     position: -10%;
     margin-left: 3%;
     height: 10%;
-    width: 53%;
+    width: 55%;
     border-radius: 2.5rem;
     background:transparent;
     border: solid 0.063rem black;
@@ -304,7 +306,10 @@ body {
 
 .toolBloc {
     background-color: rgb(128, 236, 255);
-    height: 16.875rem;    
+}
+
+.toolBloc5 #background-video, .toolBloc {
+    height: 16.875rem;
 }
 
 .toolBloc br {
@@ -384,7 +389,6 @@ body {
 /* footer mobile */
 
 footer {
-    margin-top: 2rem;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -446,30 +450,6 @@ footer {
   
   /* end of footer mobile */
 
-@media screen and (max-width: 390px) { 
-
-    body {
-        /*max-width: 390px;
-        max-height: 844px;*/
-    }
-
-    .beginnersBlog div {
-        height: 20rem;
-    }
-
-    .devresource1-2 p {
-        height: 12.5rem;
-    }
-
-    .toolBloc5 #background-video, .toolBloc {
-        height: 16.875rem;
-    }
-    
-    .toolsContainer {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-}
 
 @media screen and (min-width:391px) and (max-width:800px) { 
     .beginnersBlog div {
