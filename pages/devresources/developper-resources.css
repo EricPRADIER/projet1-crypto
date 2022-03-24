@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -17,7 +17,8 @@
 
 h1 {
     font-weight: var(--fontH1);
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
+    font-size: 2rem;
 }
 
 h2 {
@@ -253,12 +254,12 @@ body {
 
 .bloc1 .blackButton {
     position: relative;
-    top: 2.938rem; 
+    top: 1.9rem; 
 }
 
 .bloc2 .blackButton {
     position: relative;
-    top: 4.688rem; 
+    top: 3rem; 
 }
 .bloc3 .blackButton {
     position: relative;
@@ -266,22 +267,22 @@ body {
 }
 .bloc4 .blackButton {
     position: relative;
-    top: 2.813rem; 
+    top: 4rem; 
 }
 .bloc5 .blackButton {
     position: relative;
-    top: 1.563rem;  
+    top: 0.6rem;  
 }
 .bloc6 .blackButton {
     position: relative;
-    top: 2.813rem; 
+    top: 1.8rem; 
 }
 
 .whiteButton {  
     position: -10%;
     margin-left: 3%;
     height: 10%;
-    width: 46%;
+    width: 53%;
     border-radius: 2.5rem;
     background:transparent;
     border: solid 0.063rem black;
@@ -310,7 +311,7 @@ body {
 }
 
 .toolBloc br {
-    height: 0.031rem;
+    height: 0.01rem;
 }
 
 .toolBloc1 {
