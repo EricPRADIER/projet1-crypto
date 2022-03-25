@@ -46,16 +46,15 @@ body {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: rgb(0, 0, 0); *** à changer **** */
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  color: var(--primary-color);
 }
 
-/**** à ajouter *****/
 .header li a:visited {
   color: var(--primary-color);
 }
@@ -85,15 +84,15 @@ body {
 
 .header .menu-icon {
   cursor: pointer;
-  display: flex; /**** à changer *****/
-  justify-content: flex-end; /**** à changer *****/
+  display: flex;
+  justify-content: flex-end;
   padding: 28px 20px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: var(--secondary-color); /**** à changer *****/
+  background: var(--secondary-color);
   display: block;
   height: 2px;
   position: relative;
@@ -103,7 +102,7 @@ body {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: var(--secondary-color); /**** à changer *****/
+  background: var(--secondary-color);
   content: '';
   display: block;
   height: 100%;
