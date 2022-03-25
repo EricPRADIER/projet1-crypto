@@ -302,7 +302,7 @@ width: 40px;
   }
 
   img {
-    padding-left: 2rem;
+    width: 200px;
   }
 
  main {
@@ -312,6 +312,7 @@ width: 40px;
 .image-3d {
     display: flex;
     width: 60%;
+    padding-left: 1rem;
 }
 
 .survie {
