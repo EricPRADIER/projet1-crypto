@@ -301,9 +301,9 @@ width: 40px;
     padding: 30px 30px;
   }
 
-  img {
-    width: 200px;
-  }
+.header img {
+  width: 200px;
+}
 
  main {
       display: flex;
